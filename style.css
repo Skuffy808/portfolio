@@ -1,0 +1,68 @@
+body {
+  background-color: #36393f;
+  color: #ffffff;
+}
+
+header {
+  background-color: #7289da;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+section {
+  margin: 10px;
+  display: inline;
+
+}
+
+#photos, #coding-projects, #graphic-design, #artwork {
+  background-color: #2e3338;
+  padding: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  display: block; /* added this line */
+  position: relative;
+}
+
+#photos img, #coding-projects img, #graphic-design img, #artwork img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#photos h2, #coding-projects h2, #graphic-design h2, #artwork h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style links */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  a {
+    display: inline;
+  }
+}
+
+a:hover {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
